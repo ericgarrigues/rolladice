@@ -4,7 +4,7 @@
 
 ## Application packaging and deployment in k8s
 
-Note: you must replace MY_REGISTRY variable in commands and deployment files.
+Note: you must replace **MY_REGISTRY** variable in commands and deployment files with the correct address and port of your docker registry.
 
 Expample:
 
