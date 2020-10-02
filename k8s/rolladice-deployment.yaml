@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rolladice
+spec:
+  selector:
+    matchLabels:
+      app: rolladice
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: rolladice
+    spec:
+      containers:
+      - name: rolladice
+        image: MY_REGISTRY/rolladice:v1
+        ports:
+        - name: rollapi-port
+          containerPort: 5000
+          protocol: TCP
+    
